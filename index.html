@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Leeyul Design Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</script>
+</head>
+<body>
+  <header>
+      <nav>
+        <div class="logo"><a onclick="fnMove('1')"><img src="img/01_logo.png" alt="logo"></a></div>
+        <div class="menu">
+          <ul>
+            <li><a onclick="fnMove('2')">PROFILE</a></li>
+            <li><a onclick="fnMove('3')">PACKAGE</a></li>
+            <li><a onclick="fnMove('4')">EDITORIAL</a></li>
+            <li><a onclick="fnMove('5')">ADVERTISE</a></li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <section>
+    <div class="top" >
+      <div class="top_wrap" id="anchor1">
+        <div class="top_title" data-aos="flip-left"><img src="img/01_tl_01.png" alt="logo"></div>
+      </div>
+    </div>
+
+    <div class="mid">
+      <div class="mid_wrap" id="anchor2">
+        <div class="mid_01" data-aos="flip-left"><img src="img/01_pf_01.png" alt="프로필"></div>
+      </div>
+    </div>
+
+    <div class="bottom" id="anchor3">
+      <div class="bot_tit"><img src="img/01_tl_02.png" alt=""></div>
+        <div class="bot_bt"><a href="#"><img src="img/01_pk_01.png" alt=""></a></div>
+        <div class="bot_ba"><a href="#"><img src="img/01_pg_01.png" alt=""></a></div>
+        <div class="bot_bb"><a href="#"><img src="img/01_pk_02.png" alt=""></a></div> 
+        <div class="bot_bc"></a href="#"><img src="img/01_tl_03.png" alt=""></a></div>
+        <div class="bot_bd"></a href="#"><img src="img/01_ed_01.png" alt=""></a></div>
+        <div class="bot_bf"></a href="#"><img src="img/01_ed_02.png" alt=""></a></div>
+        <div class="bot_bg"></a href="#"><img src="img/01_ed_04.png" alt=""></a></div>
+        <div class="bot_be"></a href="#"><img src="img/01_ed_05.png" alt=""></a></div>
+        <div class="bot_bh"></a href="#"><img src="img/01_ed_03.png" alt=""></a></div>
+        <div class="bot_bi"></a href="#"><img src="img/01_ed_09.png" alt=""></a></div>
+        <div class="bot_bj"></a href="#"><img src="img/01_ed_10.png" alt=""></a></div>
+        <div class="bot_bk"></a href="#"><img src="img/01_ed_11.png" alt=""></a></div>
+        <div class="bot_bl"></a href="#"><img src="img/01_ed_13.png" alt=""></a></div>   
+        <div class="bot_bm"></a href="#"><img src="img/01_ad_01.png" alt=""></a></div>
+        <div class="bot_bn"></a href="#"><img src="img/01_ad_02.png" alt=""></a></div>
+        <div class="bot_bo"></a href="#"><img src="img/01_ad_03.png" alt=""></a></div>
+        <div class="bot_bp"></a href="#"><img src="img/01_ad_05.png" alt=""></a></div>
+        <div class="bot_bq"></a href="#"><img src="img/01_ad_06.png" alt=""></a></div>
+        <div class="bot_br"></a href="#"><img src="img/01_ad_07.png" alt=""></a></div>
+        <div class="bot_bs"></a href="#"><img src="img/01_ad_09.png" alt=""></a></div>
+        <div class="bot_bu"></a href="#"><img src="img/01_ad_10.png" alt=""></a></div>
+      </div>
+    </div>
+  </section>
+   
+  <footer>
+    <div class="footerwrap">
+      <div class="footerleft">
+        <img src="img/01_logo.png" alt="">
+      </div>
+      <div class="footerright">
+        Copyright 2021 LeeYul Design Studio. all rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!--AOS 스트립트 적용 부문 시작-->
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+  <!--AOS 스트립트 적용 부문 끝-->
+
+  <!--특정위치로 쩜프해서 이동 시작 : 마지막 숫자를 조절하면 속도조절이 됩니다.-->
+  <script type="text/javascript" src="js/jquery-latest.js"></script>
+  <script>
+      function fnMove(seq){
+          var offset = $("#anchor" + seq).offset();
+          $('html, body').animate({scrollTop : offset.top},500);
+      }
+  </script>
+  <!--특정위치로 쩜프해서 이동 끝-->
+ </body>
+</html>

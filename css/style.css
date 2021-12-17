@@ -1,0 +1,83 @@
+*{margin: 0;}
+
+/*html에 fontsize를 10으로 고정하고, 이를 기준으로 body에 1rem으로 적용하면 모든 폰트와 화면에서 1rem=10px의 기준으로 정의된다.*/
+html{font-size: 10px;background-size: 1920px;}
+body{font-size: 1rem;background-color: #222222;}
+a{text-decoration: none;color:#222222;}
+
+
+header {position: fixed;background-color:#222222;height: 8rem;z-index: 1000;width: 100%;}
+header > nav {margin: auto;width: 1920px;height: 8rem;display: flex;justify-content: space-between;align-items: center;}
+.logo {display: inline-block;padding-left: 48rem;padding-top: -1rem;}
+.menu {display: inline-block;}
+.menu > ul {list-style: none;transform: translateX(-300px);}
+.menu > ul > li {float: left;margin: auto;}
+.menu > ul > li > a {color:#ffffff;font-family: 'Noto Sans KR', sans-serif;font-weight: 500;font-size: 1.8rem;letter-spacing: -0.03rem;padding: 1rem 7rem;}
+.menu > ul > li > a:hover {color:#01CBF5;}
+
+section > .top {background-image: url('../img/01_bg_01.png');height: 970px;}
+section > .top > .top_wrap{margin: auto;width: 1920px;}
+section > .top > .top_wrap > .top_title{padding-top: 0.1rem;padding-left: 43%;width: -140%;padding-right: 0%;text-align: center;transform: translateY(190%);}
+
+
+section > .mid{background-image: url('../img/01_bg_03.png');height: 138.9rem;}
+section > .mid > .mid_wrap{margin: auto;width: 1920px;}
+section > .mid > .mid_wrap > .mid_01{padding-top: 30rem;padding-left: 800px;}
+
+section > .bottom{height: 95.4rem;}
+section > .bottom > .bot_tit{margin: auto;text-align: center;width: 1920px;padding-top: 5rem;}
+section > .bottom > .bot_bt{margin: auto;text-align: auto;width: 1920px;padding-top: 15rem;padding-left: 35rem;}
+section > .bottom > .bot_ba{margin: auto;text-align: auto;width: 1920px;padding-top: 2rem;padding-left: 35rem;}
+section > .bottom > .bot_bb{margin: auto;text-align: auto;width: 1920px;padding-top: 15rem;padding-left: 61rem;}
+section > .bottom > .bot_bc{margin: auto;text-align: auto;width: 1920px;padding-top: 40rem;padding-left: 57rem;}
+section > .bottom > .bot_bd{margin: auto;text-align: auto;width: 1920px;padding-top: 15rem;padding-left: 35rem;}
+section > .bottom > .bot_bf{margin: auto;text-align: auto;width: 1920px;padding-top: 2rem;padding-left: 35rem;}
+section > .bottom > .bot_bg{margin: auto;text-align: auto;width: 1920px;padding-top: 15rem;padding-left: 61rem;}
+section > .bottom > .bot_be{margin: auto;text-align: auto;width: 1920px;padding-top: 15rem;padding-left: 35rem;}
+section > .bottom > .bot_bh{margin: auto;text-align: auto;width: 1920px;padding-top: 2rem;padding-left: 35rem;}
+section > .bottom > .bot_bi{margin: auto;text-align: auto;width: 1920px;padding-top: 15rem;padding-left: 61rem;}
+section > .bottom > .bot_bj{margin: auto;text-align: auto;width: 1920px;padding-top: 15rem;padding-left: 35rem;}
+section > .bottom > .bot_bk{margin: auto;text-align: auto;width: 1920px;padding-top: 2rem;padding-left: 35rem;}
+section > .bottom > .bot_bl{margin: auto;text-align: auto;width: 1920px;padding-top: 15rem;padding-left: 61rem;}
+section > .bottom > .bot_bm{margin: auto;text-align: auto;width: 1920px;padding-top: 40rem;padding-left: 57rem;}
+section > .bottom > .bot_bn{margin: auto;text-align: auto;width: 1920px;padding-top: 15rem;padding-left: 35rem;}
+section > .bottom > .bot_bo{margin: auto;text-align: auto;width: 1920px;padding-top: 2rem;padding-left: 35rem;}
+section > .bottom > .bot_bp{margin: auto;text-align: auto;width: 1920px;padding-top: 15rem;padding-left: 61rem;}
+section > .bottom > .bot_bq{margin: auto;text-align: auto;width: 1920px;padding-top: 15rem;padding-left: 35rem;}
+section > .bottom > .bot_br{margin: auto;text-align: auto;width: 1920px;padding-top: 2rem;padding-left: 35rem;}
+section > .bottom > .bot_bs{margin: auto;text-align: auto;width: 1920px;padding-top: 15rem;padding-left: 35rem;}
+section > .bottom > .bot_bu{margin: auto;text-align: auto;width: 1920px;padding-top: 2rem;padding-left: 35rem;padding-bottom: 30rem;}
+.bottom{display: contents;}
+
+
+footer {
+    height: 120px;
+    width: 100%;
+    background-color: #535353;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerwrap {
+    border: 0px solid blue;
+    width: 1920px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerleft {
+    display: inline-block;padding-left: 480px;
+}
+
+.footerright {
+    display: inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding-right: 500px;
+}
